@@ -40,7 +40,7 @@ require("./middlewaves/compress")(app);
 require("./middlewaves/static")(app);
 require("./middlewaves/router")(app);
 
-let port = process.env.port || 3009;
+let port = process.env.PORT || 3009;
 app.listen(port, "0.0.0.0", function () {
   console.log("server listen on port:", port);
 });
